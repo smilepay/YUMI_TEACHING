@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_centerHorizontal="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- TODO(crbug.com/900912): Fix and remove lint ignore -->
+        <EditText
+            android:id="@+id/room_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="입장 코드(문제 번호)를 입력하세요"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            tools:ignore="LabelFor,Autofill" />
+
+        <ImageButton
+            android:id="@+id/connect_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:drawable/sym_action_call"
+            android:contentDescription="@string/connect_description" />
+
+    </LinearLayout>
+
+</LinearLayout>
